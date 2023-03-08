@@ -4,7 +4,7 @@ import { onMounted, ref } from "vue";
 import io from "socket.io-client";
 import { useRoute } from "vue-router";
 
-const socket = io();
+const socket = io("wss://3.136.229.133:3000");
 
 const localStream = ref(new MediaStream());
 
@@ -20,6 +20,10 @@ const iceServers = {
   iceServers: [
     { urls: "stun:stun.l.google.com:19302" },
     { urls: "stun:stun1.l.google.com:19302" },
+    { urls: "stun:stun2.l.google.com:19302" },
+    { urls: "stun:stun3.l.google.com:19302" },
+    { urls: "stun:stun4.l.google.com:19302" },
+    { urls: "stun:stun.2talk.com:3478" },
   ],
 };
 
