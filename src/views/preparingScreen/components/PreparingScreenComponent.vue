@@ -146,7 +146,7 @@ function switchMicrophone() {
         @click="() => $router.push(`/room/${$route.params.id}`)"
         class="btn btn-secondary w-full mt-10"
       >
-        Join to my ass
+        Join to room
       </button>
     </div>
   </div>
